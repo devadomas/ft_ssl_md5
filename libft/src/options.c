@@ -6,16 +6,11 @@
 /*   By: azaliaus <azaliaus@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/13 15:31:05 by azaliaus          #+#    #+#             */
-/*   Updated: 2019/06/02 15:24:48 by azaliaus         ###   ########.fr       */
+/*   Updated: 2019/06/06 10:10:30 by azaliaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/*
-** Sets bits for alphanumeric characters.
-** Sets left-most-bit in case of non-alphanumeric character
-*/
 
 static void			treat_options(char c, unsigned long *options)
 {

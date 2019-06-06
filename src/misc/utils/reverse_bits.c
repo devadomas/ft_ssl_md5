@@ -6,7 +6,7 @@
 /*   By: azaliaus <azaliaus@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/21 17:34:50 by azaliaus          #+#    #+#             */
-/*   Updated: 2019/05/18 19:34:31 by azaliaus         ###   ########.fr       */
+/*   Updated: 2019/06/06 10:11:14 by azaliaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 uint32_t	reverse_bits(uint32_t value)
 {
-	return (value & 0x000000FFU) << 24 | (value & 0x0000FF00U) << 8 |\
-	(value & 0x00FF0000U) >> 8 | (value & 0xFF000000U) >> 24;
+	return (value & 0x000000FFU) << 24 | (value & 0x0000FF00U) << 8 |
+			(value & 0x00FF0000U) >> 8 | (value & 0xFF000000U) >> 24;
 }
 
 uint64_t	reverse_bits64(uint64_t value)

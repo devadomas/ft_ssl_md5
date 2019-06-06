@@ -6,7 +6,7 @@
 /*   By: azaliaus <azaliaus@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/08 20:49:45 by azaliaus          #+#    #+#             */
-/*   Updated: 2019/06/02 15:28:35 by azaliaus         ###   ########.fr       */
+/*   Updated: 2019/06/06 10:09:36 by azaliaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ static t_arg	*null_char(t_arg *args)
 	{
 		if (!(args->content = ft_strnew(sizeof(char) * (args->min_width - 1))))
 			return (NULL);
-		args->content =
-		(char *)ft_memsets((void *)args->content, ' ', args->min_width - 1);
+		args->content = (char *)ft_memsets((void *)args->content, ' ',
+						args->min_width - 1);
 		if (args->flag && args->flag[F_DASH])
 			args->content[0] = 0;
 		else
@@ -54,8 +54,7 @@ t_arg			*lower_c_to_a(va_list ap, t_arg *args)
 	if (args->min_width != -1)
 	{
 		tmp = ft_strnew(sizeof(char) * (args->min_width - 2));
-		tmp =
-		(char *)ft_memsets((void *)tmp, ' ', args->min_width - 2);
+		tmp = (char *)ft_memsets((void *)tmp, ' ', args->min_width - 2);
 		if (args->flag && args->flag[F_DASH])
 			args->content = ft_strjoinf(args->content, tmp, 3);
 		else
@@ -82,8 +81,8 @@ t_arg			*upper_c_to_a(va_list ap, t_arg *args)
 	if (args->min_width != -1)
 	{
 		tmp = ft_strnew(sizeof(char) * (args->min_width - args->len - 1));
-		tmp =
-		(char *)ft_memsets((void *)tmp, ' ', args->min_width - args->len - 1);
+		tmp = (char *)ft_memsets((void *)tmp, ' ',
+				args->min_width - args->len - 1);
 		if (args->flag && args->flag[F_DASH])
 			args->content = ft_strjoinf(args->content, tmp, 3);
 		else

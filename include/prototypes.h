@@ -6,7 +6,7 @@
 /*   By: azaliaus <azaliaus@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/14 15:01:49 by azaliaus          #+#    #+#             */
-/*   Updated: 2019/05/18 19:31:27 by azaliaus         ###   ########.fr       */
+/*   Updated: 2019/06/06 10:14:20 by azaliaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -124,6 +124,5 @@ uint64_t			reverse_bits64(uint64_t value);
 void				print_memory(const char *str, size_t size);
 char				*strnjoinsf1(char *s1, char *s2, size_t len1, size_t len2);
 char				*prepend_zeros_to_hex(char *str, size_t len);
-bool				stdin_input_available(void);
 
 #endif

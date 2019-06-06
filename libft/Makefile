@@ -41,7 +41,6 @@ SRC		=	ft_atoi.c												\
 			ft_putstr.c												\
 			ft_putstr_fd.c											\
 			ft_putstr_multi.c										\
-			ft_realpath.c											\
 			ft_sort_wordtab.c										\
 			ft_sqrt.c												\
 			ft_str2dup.c											\

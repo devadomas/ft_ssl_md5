@@ -6,7 +6,7 @@
 /*   By: azaliaus <azaliaus@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/03 14:50:19 by azaliaus          #+#    #+#             */
-/*   Updated: 2019/06/02 15:54:29 by azaliaus         ###   ########.fr       */
+/*   Updated: 2019/06/06 10:07:30 by azaliaus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,13 +53,11 @@
 # define MASK3 "11110xxx10xxxxxx10xxxxxx10xxxxxx"
 
 # include <fcntl.h>
-# include <stdarg.h>
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
 # include <wchar.h>
 # include <limits.h>
-# include <stdbool.h>
 
 typedef struct		s_list
 {
@@ -212,11 +210,6 @@ int					get_next_line(int const fd, char **line);
 ** options
 */
 unsigned long		options(char **argv);
-
-/*
-** sym_link
-*/
-bool				ft_realpath(char **path);
 
 /*
 ** 	~~~~~~~~~~~~~~~~~~~~ PRINTF FUNCTIONS ~~~~~~~~~~~~~~~~~~~~ **
